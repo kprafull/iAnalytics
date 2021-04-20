@@ -1,8 +1,20 @@
 # iAnalytics
 Analytics and visualization of data
 
+## Dashboard view
+Dashboard view shows all the charts configured with real time data from the backend
 
+![image](https://user-images.githubusercontent.com/698481/115318884-86172580-a133-11eb-8d69-ef70fb486095.png)
 
+## Designer view
+Designer view helps the admin to define new charts/reports. Admin can choose the metrics and how to visualize these metrics from this view. After defining the graph, it can be saved. The saved graphs are displayed on the dashboard.
+
+![image](https://user-images.githubusercontent.com/698481/115320154-29693a00-a136-11eb-82da-3cff98e10e3e.png)
+
+## Postgres Data
+The following postgres data should be configured to view the above charts.
+
+```
 --
 -- Data for Name: analytics_metrics; Type: TABLE DATA; Schema: public; Owner: prafull
 --
@@ -16,8 +28,9 @@ COPY public.analytics_metrics (id, column_name, column_type, database, database_
 6	high_wind	INT	POSTGRES	SQL	High Wind
 7	low_wind	INT	POSTGRES	SQL	Low Wind
 \.
+```
 
-
+```
 --
 -- Data for Name: analytics_report; Type: TABLE DATA; Schema: public; Owner: prafull
 --
@@ -32,6 +45,4 @@ COPY public.analytics_report (id, data, name) FROM stdin;
 7	{"type":["x-axis","pie"],"title":"City Avg Wind","xAxis":"city","seriesColors":[],"metrics":[1,5],"groupBy":[]}	City Avg Wind
 8	{"type":["x-axis","column","spline"],"title":"City Temp vs Wind","xAxis":"city","seriesColors":[],"metrics":[1,2,6],"groupBy":[]}	City Temp vs Wind
 \.
-
-
-![image](https://user-images.githubusercontent.com/698481/115318884-86172580-a133-11eb-8d69-ef70fb486095.png)
+```
