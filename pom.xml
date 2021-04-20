@@ -8,7 +8,7 @@
 		<version>2.1.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.vmware.analytics</groupId>
+	<groupId>com.analytics</groupId>
 	<artifactId>iAnalytics</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>iAnalytics</name>
@@ -16,7 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<app.home>/opt/app/vmware/iAnalytics</app.home>
+		<app.home>/opt/app/iAnalytics</app.home>
 	</properties>
 
 	<dependencies>
