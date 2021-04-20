@@ -2,14 +2,14 @@
 Analytics and visualization of data
 
 ## Dashboard view
-Dashboard view shows all the charts configured with real time data from the backend
+Dashboard view shows all the charts configured with real time data from the backend.
 
 ![image](https://user-images.githubusercontent.com/698481/115318884-86172580-a133-11eb-8d69-ef70fb486095.png)
 
 ## Designer view
 Designer view helps the admin to define new charts/reports. Admin can choose the metrics and how to visualize these metrics from this view. After defining the graph, it can be saved. The saved graphs are displayed on the dashboard.
 
-![image](https://user-images.githubusercontent.com/698481/115320154-29693a00-a136-11eb-82da-3cff98e10e3e.png)
+![image](https://user-images.githubusercontent.com/698481/115324030-017dd480-a13e-11eb-874e-f3969d711338.png)
 
 ## Postgres Data
 The following postgres data should be configured to view the above charts.
