@@ -1,0 +1,194 @@
+body {
+    margin: 0px;
+    background-color: #ccc;
+    #padding: 0px;
+    #font-size: .875rem;
+    #font-size: 10px;
+    #overflow-x: hidden;
+}
+
+.row {
+    width: 100%;
+}
+
+#main-dashboard {
+    padding: 1px 16px;
+    padding-top: 10px;
+}
+
+.title {
+    margin-left: 10px;
+}
+
+.chart {
+    float: left;
+    height: 270px;
+    width: calc((100%)/4 - 20px);
+    fill: aqua;
+    background-color: white;
+    border: 2px solid white;
+    margin: 5px;
+    #margin-left: 30px;
+}
+
+.chart p {
+    padding: 100px 0;
+    text-align: center;
+    font-size: smaller;
+}
+
+.normal-width-chart {
+    width: calc((100%)/4 - 20px);
+}
+
+.full-width-chart {
+    width: 100%;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar span {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    padding-right: 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Active/current link */
+.navbar a.active {
+    background-color: #080808;
+    color: white;
+}
+
+/* Links on mouse-over */
+.navbar a:hover:not(.active) {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    #padding: 16px;
+    margin-top: 50px;
+    #height: 1500px; /* Used in this example to enable scrolling */
+}
+
+
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 95%;
+    overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    #background-color: grey;
+    background-color: royalblue;
+    color: white;
+}
+
+.sidebar a.header {
+    background-color: #555;
+    color: white;
+}
+
+.sidebar a.report {
+}
+
+.sidebar a.metric select {
+    float: right;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    #background-color: #333333;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 300px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+#analytics-metrics {
+    max-height: 50%;
+    overflow:auto;
+}
+
+#analytics-reports {
+    max-height: 50%;
+    overflow:auto;
+}
+
+/* Global alert display in designer */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+/* Close button on the alert*/
+a.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    line-height: 1.2;
+}
+
+a.close:hover {
+    font-weight:bold;
+    opacity: .7;
+}
+
+/* To hide an element*/
+.hidden {
+    display: none;
+}

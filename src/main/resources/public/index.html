@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Interactive Analytics</title>
+    <link rel="stylesheet" href="main.css"/>
+
+</head>
+<body>
+
+<div class="navbar" id="main-menubar">
+    <span>Interactive Analytics</span>
+    <a href="#" class="active">Dashboard</a>
+    <a href="#designer">Designer</a>
+</div>
+
+<div class="main">
+
+    <div class="row" id="main-dashboard">
+        <div class="title">Charts</div>
+    </div>
+
+    <div id="main-designer" style="display: none">
+        <div class="sidebar">
+            <div id="analytics-metrics">
+                <a class="header">Metrics</a>
+            </div>
+
+            <a class="header">Chart Options</a>
+            <table width="100%">
+                <tbody>
+                <tr>
+                    <td>Select Container</td>
+                    <td>
+                        <button type="button" class="btn btn-primary btn-xs" id="id-prev-chart-button">&lt;</button>
+                        <button type="button" class="btn btn-primary btn-xs" id="id-next-chart-button">&gt;</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td><input type="text" id="graph-title"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="graph-draw">Draw</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="graph-save">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="graph-refresh-all">Refresh All</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <a class="header">Containers</a>
+            <table width="100%">
+                <tbody>
+                <tr>
+                    <td>Add Container</td>
+                    <td>
+                        <button id="container-add" type="button" class="btn btn-primary btn-xs">Add</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Delete Container</td>
+                    <td>
+                        <button id="container-delete" type="button" class="btn btn-primary btn-xs">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Clear Container</td>
+                    <td>
+                        <button id="container-clear" type="button" class="btn btn-primary btn-xs">Clear</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <div id="analytics-reports">
+                <a class="header">Reports</a>
+            </div>
+        </div>
+
+        <!-- Page content -->
+        <div class="content">
+            <div class="row">
+                <h1 class="h2">Dashboard Designer</h1>
+                <div class="alert hidden"><a href="#" class="close" title="close">×</a><span>Hello</span></div>
+                <div class="title">Charts</div>
+                    <div class="chart-row" id="chart-row-designer">
+                        <div class="chart normal-width-chart"></div>
+                        <div class="chart normal-width-chart"></div>
+                        <div class="chart normal-width-chart"></div>
+                        <div class="chart normal-width-chart"></div>
+                        <div class="chart normal-width-chart"></div>
+                        <div class="chart normal-width-chart"></div>
+                        <div class="chart normal-width-chart"></div>
+                        <div class="chart normal-width-chart"></div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
+<script src="/webjars/highcharts/5.0.1/highcharts.js"></script>
+<script src="error.js"></script>
+<script src="util.js"></script>
+<script src="metrics.js"></script>
+<script src="reports.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
